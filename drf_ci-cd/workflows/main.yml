@@ -33,6 +33,7 @@ jobs:
             set -e
             cd /home/ubuntu/app/drf_CICD/drf_ci-cd
             git pull origin main
+            
             cd /home/ubuntu/app/drf_CICD/drf_ci-cd/drf_test
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
             echo "DEBUG='${{ secrets.DEBUG }}'" > .env
