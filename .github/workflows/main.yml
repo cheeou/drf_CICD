@@ -42,4 +42,6 @@ jobs:
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
             echo "DEBUG='${{ secrets.DEBUG }}'" > .env
             
-            sudo systemctl restart site.service
+            sudo systemctl restart site.service 
+
+            
